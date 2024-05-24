@@ -11,11 +11,11 @@
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
   # Site title
-  title: Theme Redefine
+  title: Camila's Dev Blog
   # Author name
-  author: The Redefine Team
+  author: Camila
   # Site URL
-  url: https://redefine.ohevan.com
+  url: https://camila-tw.github.io/hexo-dev-blog-camila/
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -23,11 +23,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: https://firebasestorage.googleapis.com/v0/b/camila-dev-blog.appspot.com/o/DALL%C2%B7E%202024-03-31%2018.50.56%20-%20Imagine%20a%20logo%20that%20embodies%20the%20spirit%20of%20exploration%2C%20innovation%2C%20and%20the%20fusion%20of%20art%20and%20technology.%20The%20logo%20design%20is%20inspired%20by%20the%20themes%20of.webp?alt=media&token=cb8b2ca9-6948-479a-86c5-19801291bc0b
   # Site logo
-  logo: 
+  logo: https://firebasestorage.googleapis.com/v0/b/camila-dev-blog.appspot.com/o/DALL%C2%B7E%202024-03-31%2018.50.56%20-%20Imagine%20a%20logo%20that%20embodies%20the%20spirit%20of%20exploration%2C%20innovation%2C%20and%20the%20fusion%20of%20art%20and%20technology.%20The%20logo%20design%20is%20inspired%20by%20the%20themes%20of.webp?alt=media&token=cb8b2ca9-6948-479a-86c5-19801291bc0b
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: https://firebasestorage.googleapis.com/v0/b/camila-dev-blog.appspot.com/o/DALL%C2%B7E%202024-03-31%2018.50.56%20-%20Imagine%20a%20logo%20that%20embodies%20the%20spirit%20of%20exploration%2C%20innovation%2C%20and%20the%20fusion%20of%20art%20and%20technology.%20The%20logo%20design%20is%20inspired%20by%20the%20themes%20of.webp?alt=media&token=cb8b2ca9-6948-479a-86c5-19801291bc0b
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -37,7 +37,7 @@ colors:
   #Primary color
   primary: "#A31F34"
   # Secondary color (TBD)
-  secondary:
+  secondary: "#F9D342"
   # Default theme mode initial value (will be overwritten by prefer-color-scheme)
   default_mode: light # light, dark
 # COLORS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -50,25 +50,25 @@ global:
   fonts:
     # Chinese fonts
     chinese: 
-      enable: false # Whether to enable custom chinese fonts
-      family:  # Font family
-      url:  # Font URL to CSS file
+      enable: true # Whether to enable custom chinese fonts
+      family: 'Noto Sans TC' # Font family
+      url:  'https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap' # Font URL to CSS file
     # English fonts
     english: 
       enable: false # Whether to enable custom english fonts
-      family:  # Font family
-      url:  # Font URL to CSS file
+      family: 'Roboto' # Font family
+      url:  'https://fonts.googleapis.com/css2?family=Roboto&display=swap' # Font URL to CSS file
   # Content max width
   content_max_width: 1000px
   # Sidebar width
-  sidebar_width: 210px
+  sidebar_width: 250px
   # Effects on mouse hover
   hover:
     shadow: true # shadow effect
-    scale: false # scale effect
+    scale: true # scale effect
   # Scroll progress
   scroll_progress:
-    bar: false # progress bar
+    bar: true # progress bar
     percentage: true # percentage
   # Website counter
   website_counter:
@@ -116,10 +116,10 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: Theme Redefine
+  title: Camila's Dev Blog
   # Home banner subtitle
   subtitle:
-    text: [] # subtitle text, array
+    text: ["探索技術與創新的旅程", "分享程式開發的點滴"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       api: https://v1.hitokoto.cn # API URL, can add types, see https://developer.hitokoto.cn/sentence/#%E5%8F%A5%E5%AD%90%E7%B1%BB%E5%9E%8B-%E5%8F%82%E6%95%B0
@@ -136,32 +136,32 @@ home_banner:
   # Specific style of the text
   text_style: 
     # Title font size
-    title_size: 2.8rem
+    title_size: 3rem
     # Subtitle font size
-    subtitle_size: 1.5rem
+    subtitle_size: 1.8rem
     # Line height between title and subtitle
-    line_height: 1.2
+    line_height: 1.4
   # Home banner custom font
   custom_font: 
     # Whether to enable custom font
-    enable: false
+    enable: true
     # Font family
-    family: 
+    family: 'Noto Sans TC'
     # URL to font CSS file
-    url:
+    url: 'https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap'
   # Home banner social links
   social_links:
     # Whether to enable
-    enable: false
+    enable: true
     # Social links style
-    style: default # default, reverse, center
+    style: reverse # default, reverse, center
     # Social links
     links:
-      github:  # your GitHub URL
+      github:  https://github.com/camila-tw # your GitHub URL
       instagram: # your Instagram URL
       zhihu:  # your ZhiHu URL
-      twitter:  # your twitter URL
-      email:  # your email
+      twitter:  https://x.com/Camila7777770 # your twitter URL
+      email: camilalo.tw@gmail.com # your email
       # ...... # you can add more
     # Social links with QRcode drawers
     qrs:
@@ -189,17 +189,20 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
+    Archives: 
+      path: /archives 
+      icon: fa-regular fa-archive # can be empty
     # Status: 
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
-    # About: 
-    #   icon: fa-regular fa-user
-    #   submenus:
-    #     Me: /about
-    #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
+    About:
+      path: /about
+      icon: fa-regular fa-user
+    #About: 
+     # icon: fa-regular fa-user
+      #  submenus:
+      #    Me: /about
+      #    Github: https://github.com/EvanNotFound/hexo-theme-redefine
     #     Blog: https://ohevan.com
     #     Friends: /friends
     # Links: 
@@ -229,15 +232,15 @@ home:
     announcement: # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      # Archives: 
-      #   path: /archives 
-      #   icon: fa-regular fa-archive # can be empty
-      # Tags: 
-      #   path: /tags 
-      #   icon: fa-regular fa-tags # can be empty
-      # Categories: 
-      #   path: /categories 
-      #   icon: fa-regular fa-folder # can be empty
+      Archives: 
+        path: /archives 
+        icon: fa-regular fa-archive # can be empty
+      Tags: 
+        path: /tags 
+        icon: fa-regular fa-tags # can be empty
+      Categories: 
+        path: /categories 
+        icon: fa-regular fa-folder # can be empty
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
@@ -258,12 +261,12 @@ articles:
   # Set the styles of the article
   style:
     font_size: 16px # Font size
-    line_height: 1.5 # Line height
+    line_height: 1.6 # Line height
     image_border_radius: 14px # image border radius
     image_alignment: center # image alignment. left, center
     image_caption: false # Whether to display image caption
     link_icon: true # Whether to display link icon
-    title_alignment: left # Title alignment. left, center
+    title_alignment: center # Title alignment. left, center
     headings_top_spacing: # Top spacing for headings from h1-h6
       h1: 5rem
       h2: 4rem
@@ -280,20 +283,20 @@ articles:
   author_label: 
     enable: true # Whether to enable
     auto: false # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
-    list: []
+    list: ["Camila"]
   # Code block settings
   code_block:
     copy: true # Whether to enable code block copy button
     style: mac # mac | simple
     font: # Custom font
-      enable: false # Whether to enable
-      family: # Font family
-      url: # Font URL to CSS file
+      enable: true # Whether to enable
+      family: 'Source Code Pro' # Font family
+      url: 'https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap' # Font URL to CSS file
   # Table of contents settings
   toc:
     enable: true # Whether to enable TOC
     max_depth: 3 # TOC depth
-    number: false # Whether to add number to TOC automatically
+    number: true # Whether to add number to TOC automatically
     expand: true # Whether to expand TOC
     init_open: true # Open toc by default
   # Whether to enable copyright notice
@@ -305,9 +308,9 @@ articles:
   # Article recommendation. Requires nodejieba (npm install nodejieba). Transplanted from hexo-theme-volantis.
   recommendation:
     # Whether to enable article recommendation
-    enable: false
+    enable: true
     # Article recommendation title
-    title: 推荐阅读
+    title: 推薦閱讀
     # Max number of articles to display
     limit: 3
     # Max number of articles to display mobile
@@ -331,7 +334,7 @@ comment:
     # Waline comment system. See https://waline.js.org/
     waline:
       serverUrl: https://example.example.com # Waline server URL. e.g. https://example.example.com
-      lang: zh-CN # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
+      lang: zh-TW # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
       emoji: [] # Waline emojis, see https://waline.js.org/guide/features/emoji.html
       recaptchaV3Key: wasd # Google reCAPTCHA v3 key. See https://waline.js.org/reference/client/props.html#recaptchav3key
       turnstileKey: # Turnstile key. See https://waline.js.org/reference/client/props.html#turnstilekey
@@ -371,11 +374,11 @@ footer:
   # Icon in footer, write fontawesome icon code here
   icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-  start: 2022/8/17 11:45:14
+  start: 2024/1/1 11:45:14
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
-  customize:
+  customize: "感謝您的來訪！歡迎留下您的寶貴意見。"
   # ICP record number. See https://beian.miit.gov.cn/
   icp:
     enable: false # Whether to enable
@@ -405,7 +408,7 @@ inject:
 plugins:
   # RSS feed. Requires hexo-generator-feed (npm i hexo-generator-feed). See https://github.com/hexojs/hexo-generator-feed
   feed:
-    enable: false # Whether to enable
+    enable: true # Whether to enable
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
     enable: false # Whether to enable
@@ -424,7 +427,7 @@ plugins:
       # .... you can add more audios here
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
-    enable: false # enable mermaid or not
+    enable: true # enable mermaid or not
     version: "9.3.0" # default v9.3.0
 # PLUGINS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
@@ -456,5 +459,5 @@ cdn:
 # Docs: https://redefine-docs.ohevan.com/developer
 developer:
   # Whether to enable developer mode (only for developers who want to modify the theme source code, not for ordinary users)
-  enable: false
+  enable: true
 # DEVELOPER MODE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
