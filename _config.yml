@@ -189,7 +189,7 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    Archives: 
+    Blog: 
       path: /archives 
       icon: fa-regular fa-archive # can be empty
     # Status: 
@@ -232,18 +232,18 @@ home:
     announcement: 公告測試文字 # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      Archives: 
-        path: /archives 
-        icon: fa-regular fa-archive # can be empty
-        class: text-left
-      Tags: 
-        path: /tags 
-        icon: fa-regular fa-tags # can be empty
-        class: text-left
-      Categories: 
-        path: /categories 
-        icon: fa-regular fa-folder # can be empty
-        class: text-left
+      # Archives: 
+      #   path: /archives 
+      #   icon: fa-regular fa-archive # can be empty
+      #   class: text-left
+      # Tags: 
+      #   path: /tags 
+      #   icon: fa-regular fa-tags # can be empty
+      #   class: text-left
+      # Categories: 
+      #   path: /categories 
+      #   icon: fa-regular fa-folder # can be empty
+      #   class: text-left
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
